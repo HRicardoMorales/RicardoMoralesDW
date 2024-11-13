@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=NTR&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/*---Header------*/
+
+header a{
+    text-decoration: none;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header h1{
+    font-size: 45px;
+    color: #FBB031;
+    padding: 30px;
+}
+header nav ul li{
+    font-size: 20px;
+    font-family: "NTR", sans-serif;
+}
+
+header{
+    background-color: #000100;
+
+}
+header nav ul{
+    list-style:none;
+    margin: 10px;
+
+}
+
+header nav ul li a{
+    text-decoration:none;
+    color: #EDF2F4;
+}
+
+header nav ul li{
+    margin: 10px;
+    display: inline-block
+}
+
+/*---Hero------*/
+
+.hero{
+    height: 500px;
+    background-image: url(../img/banner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero div h2{
+    font-size: 60px;
+    padding-top: 10px;
+    color: #000000;
+    font-family: "NTR", sans-serif;
+    
+}
+.hero div p{
+    font-size: 35px;
+    color: rgb(177, 4, 4);
+}
+
+.hero div a{
+    font-size: 25px;
+    text-decoration: none;
+    color: #FBB031;
+    font-family: "NTR", sans-serif;
+}
+
+.hero div{
+    text-align: center;
+}
+
+/*---bienvenida------*/
+
+.Bienvenida h2{
+    font-size: 35px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.Bienvenida a img{
+    align-items: center;
+}
+
+/*---Productos------*/
+
+.Cards{
+    background-color: #585FAF;
+}
+
+.Cards .camisetas{
+    display: flex;;
+    justify-content: space-around;
+}
+
+.Cards h2{
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+    background-color: #354B9E;
+}
+
+.Cards div img{
+    width: 250px;
+    height: 250px;
+}
+
+.Cards div a{
+    text-decoration:none;
+    color: black;
+    display:block;
+    font-size: 20px;
+
+}
+
+.Cards .camisetas div{
+    border: 1px solid black;
+    width: 251px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+/*---Footer------*/
+
+footer{
+    background-color: #FBB031;
+
+}
+
+
+/*------------------------------------------------------Actuales-------------------------------------*/
+
+.Cards-actuales .Camisetas-actuales{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Camisetas-actuales div img{
+    width: 250px;
+    height: 250px;
+}
+
+.Camisetas-actuales div{
+    border: 1px solid black;
+    width: 251px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+
+/*---Retro------*/
+.Cards-retro .Camisetas-retro{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Camisetas-retro div img{
+    width: 250px;
+    height: 250px;
+}
+
+.Camisetas-retro div{
+    border: 1px solid black;
+    width: 251px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+
+/*------------------------------------------------------Ubicacion-------------------------------------*/
+
+.formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+.quiz{
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*------------------------------------------------------Quienes somos-------------------------------------*/
+
+.presentacion{
+    height: 700px;
+    margin: 0px 100px 0px 100px;
+}
+
+.presentacion h2{
+    font-size: 50px;
+    height: 75px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.presentacion img{
+    height: 400px;
+    margin: 10px;
+    padding-left: 35px;
+    
+}
+
+.presentacion p{
+    font-size: 20px;
+
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
