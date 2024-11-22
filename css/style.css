@@ -1,163 +1,346 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=NTR&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kumar+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-
 }
-/*---Header------*/
 
-header a{
+.vacio {
+    height: 10px;
+    background-color: #202128;
+}
+
+
+
+/*--------------------------Header-----------------------*/
+
+header a {
     text-decoration: none;
 }
-
-
 
 header {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-header h1{
+header h1 {
     font-size: 45px;
     color: #FBB031;
     padding: 30px;
+    font-family: normal;
+    font-weight: 800;
+
 }
-header nav ul li{
+
+header nav ul li {
     font-size: 20px;
     font-family: "NTR", sans-serif;
 }
 
-header{
+header {
     background-color: #000100;
 
 }
-header nav ul{
-    list-style:none;
+
+header nav ul {
+    list-style: none;
     margin: 10px;
 
 }
 
-header nav ul li a{
-    text-decoration:none;
+header nav ul li a {
+    text-decoration: none;
     color: #EDF2F4;
 }
 
-header nav ul li{
+header nav ul li {
     margin: 10px;
     display: inline-block
 }
 
-/*---Hero------*/
+.btn-group,
+.dropstart {
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
 
-.hero{
+/*----------------------Hero---------------------*/
+
+.hero {
     height: 500px;
-    background-image: url(../img/banner.jpeg);
+    background-image: url(../img/hero_zone_final_with_logo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+
 }
 
-.hero div h2{
-    font-size: 60px;
+.hero div h2 {
+    font-size: 40px;
     padding-top: 10px;
-    color: #000000;
-    font-family: "NTR", sans-serif;
-    
-}
-.hero div p{
-    font-size: 35px;
-    color: rgb(177, 4, 4);
+    color: #EDF2F4;
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px);
+    text-align: left;
 }
 
-.hero div a{
+.texto-amarillo {
+    color: #ffd300;
+
+}
+
+.hero div img {
+    height: 300px;
+    width: 400px;
+}
+
+.hero div p {
+    font-size: 35px;
+    text-align: left;
+    font-size: clamp(14px, 1.5vw, 25px);
+    line-height: clamp(14px, 3vw, 30px);
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    width: 75%;
+}
+
+.hero div a {
     font-size: 25px;
     text-decoration: none;
-    color: #FBB031;
+    color: #ffd300;
     font-family: "NTR", sans-serif;
+    text-align: left;
 }
 
-.hero div{
+.hero div {
     text-align: center;
+    width: 60%;
+    padding-left: 70px;
 }
 
-/*---bienvenida------*/
+.btn-hero {
+    display: none;
+    visibility: hidden;
+}
 
-.Bienvenida h2{
+/*----------------------bienvenida-------------------*/
+
+.Bienvenida {
+    background-color: #fafafa;
+}
+
+.Bienvenida h2 {
     font-size: 35px;
     padding: 15px;
     color: rgb(0, 0, 0);
     text-align: center;
 }
 
-.Bienvenida a img{
+.Bienvenida a img {
     align-items: center;
+    height: 400px;
+    width: 600px;
 }
 
-/*---Productos------*/
-
-.Cards{
-    background-color: #585FAF;
+.texto-parrafo {
+    padding-bottom: 20px
 }
 
-.Cards .camisetas{
-    display: flex;;
-    justify-content: space-around;
+.imagen-texto {
+    width: 100%
 }
 
-.Cards h2{
+.parrafo2 {
+    margin: 15px 0;
+    color: #fafafa;
+    font-size: clamp(13px, 1.5vw, 20px);
+    line-height: clamp(20px, 2.5vw, 25px)
+}
+
+.link-texto {
+    color: #ffd300;
+    text-decoration: underline
+}
+
+.main-bienvenida {
+    background-color: #202128;
+    background-position: 0 0, 50% 30%;
+    background-size: auto, cover;
+    padding: 100px 100px 40px;
+    display: flex
+}
+
+.contendor-texto {
+    max-width: 40%;
+    margin-right: 50px;
+    position: sticky;
+    top: 22vh;
+    bottom: 40px;
+    height: fit-content;
+    gap: 16px
+}
+
+.titulo-blanco {
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px)
+}
+
+.titulo-amarillo {
+    width: 100%;
+    color: #ffd300;
+    box-sizing: border-box
+}
+
+.parrafo-main {
+    font-size: clamp(14px, 1.5vw, 25px);
+    line-height: clamp(14px, 3vw, 30px);
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    width: 75%
+}
+
+.asociate {
+    background-color: #ffd300;
+    border: 2px solid #ffd300;
+    transition: .2s ease;
+    cursor: pointer;
+    color: #1f1f1f;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color .3s;
+    display: inline-block;
+    color: #000;
+    font-size: clamp(16px, 1.5vw, 24px);
+    width: fit-content
+}
+
+.responsive-asociate {
+    display: none;
+}
+
+/*--------------------------Productos----------------*/
+
+.Cards {
+    background-color: #fafafa;
+    height: 700px;
+
+}
+
+.Cards h2 {
     font-size: 25px;
     text-align: center;
     padding: 25px;
-    background-color: #354B9E;
-}
-
-.Cards div img{
-    width: 250px;
-    height: 250px;
-}
-
-.Cards div a{
-    text-decoration:none;
-    color: black;
-    display:block;
-    font-size: 20px;
-
-}
-
-.Cards .camisetas div{
-    border: 1px solid black;
-    width: 251px;
-    height: 350px;
-    text-align: center;
-    margin: 15px;
-    background-color: #FFFFFF;
-}
-/*---Footer------*/
-
-footer{
     background-color: #FBB031;
-
 }
 
 
-/*------------------------------------------------------Actuales-------------------------------------*/
+/*--------------------Footer-----------------*/
 
-.Cards-actuales .Camisetas-actuales{
+footer {
+    background-color: #FBB031;
+    color: black;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 30px;
+}
+
+.footer-column p {
+    color: #EDF2F4;
+    font-size: 18px;
+}
+
+.footer-column ul li {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #EDF2F4;
+    font-size: 18px;
+}
+
+a img {
+    transition: transform 0.3s ease;
+    height: 40px;
+    width: 40px;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-column a {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+/*!------------------------------------------------------Actuales-------------------------------------*/
+
+.contenedor-actuales {
+    margin: 0 auto;
+    width: 88vw;
+}
+
+.Cards-actuales .Camisetas-actuales {
+    padding: 10px;
+    margin: 10px;
     display: flex;
     justify-content: space-around;
 }
 
-.Camisetas-actuales div img{
+.Camisetas-actuales div img {
     width: 250px;
     height: 250px;
 }
 
-.Camisetas-actuales div{
+.Camisetas-actuales div {
     border: 1px solid black;
     width: 251px;
     height: 350px;
@@ -166,34 +349,50 @@ footer{
     background-color: #FFFFFF;
 }
 
-/*---Retro------*/
-.Cards-retro .Camisetas-retro{
-    display: flex;
-    justify-content: space-around;
+/*!---------------------------------------------------------------Retro------------------------------------------*/
+
+.menu {
+    padding: 10px;
+    margin-bottom: 10px;
+
 }
 
-.Camisetas-retro div img{
-    width: 250px;
-    height: 250px;
+.contenedor-retro {
+    margin: 0 auto;
+    width: 88vw;
 }
 
-.Camisetas-retro div{
-    border: 1px solid black;
-    width: 251px;
-    height: 350px;
-    text-align: center;
-    margin: 15px;
-    background-color: #FFFFFF;
+.card {
+    gap: 5px;
 }
 
-/*------------------------------------------------------Ubicacion-------------------------------------*/
+.anuncios {
+    height: 50px;
+    background-color: #202128;
+}
 
-.formulario{
+.owl-container {
+    margin-top: 30px;
+}
+
+
+
+
+/*!------------------------------------------------------Ubicacion-------------------------------------*/
+
+.formulario {
     display: flex;
     flex-direction: row;
     justify-content: space-between
 }
-.quiz{
+
+.row {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.quiz {
     width: 700px;
     height: 800px;
     display: flex;
@@ -202,14 +401,14 @@ footer{
     align-items: flex-start;
 }
 
-/*------------------------------------------------------Quienes somos-------------------------------------*/
+/*!------------------------------------------------------Quienes somos-------------------------------------*/
 
-.presentacion{
+.presentacion {
     height: 700px;
     margin: 0px 100px 0px 100px;
 }
 
-.presentacion h2{
+.presentacion h2 {
     font-size: 50px;
     height: 75px;
     padding: 15px;
@@ -217,21 +416,319 @@ footer{
     align-items: center;
 }
 
-.presentacion img{
+.presentacion img {
     height: 400px;
     margin: 10px;
     padding-left: 35px;
-    
+
 }
 
-.presentacion p{
+.presentacion p {
     font-size: 20px;
 
 }
 
-.presentacion{
+.presentacion {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-nosotros{
+    display: none;
+    visibility: hidden;
+}
+
+    /*------------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------Media Queries-----------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------*/
+
+
+/*!--------------------------------------------------INDEX------------------------------------------*/
+
+@media (max-width:900px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero div h2 {
+        font-size: 30px;
+    }
+
+    .hero div a {
+        font-size: 20px;
+        justify-content: flex-start;
+    }
+
+    .hero div p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:790px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .hero div img {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .hero div p {
+        text-align: start;
+    }
+
+    .hero div h2 {
+        text-align: start;
+    }
+}
+
+@media (max-width: 625px) {
+    .imagen-texto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center
+    }
+
+    .main-bienvenida {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px
+    }
+
+    .texto-parrafo,
+    .parrafo-main {
+        text-align: center
+    }
+
+    .contendor-texto {
+        max-width: 100%;
+        margin: 0;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .titulo-blanco,
+    .titulo-amarillo {
+        text-align: center;
+    }
+
+    .responsive-asociate {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .asociate {
+        display: none;
+    }
+}
+
+
+@media (max-width:520px) {
+
+    /*--------------------------Header-----------------------*/
+    .menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .dropdown-menu {
+        background-color: #202128;
+        padding: 10px;
+    }
+
+    .btn {
+        color: #FBB031;
+        font-family: normal;
+        font-weight: 700;
+    }
+
+    /*----------------------HERO---------------------*/
+
+    .hero div h2 {
+        font-size: 25px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero div a {
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero div p {
+        display: none;
+        visibility: hidden;
+    }
+
+    .btn-hero {
+        display: block;
+        visibility: visible;
+        margin-top: 50px;
+    }
+
+    .texto-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .texto-hero a {
+        display: none;
+        visibility: hidden;
+    }
+
+    /*----------------------BIENVENIDA---------------------*/
+
+    .texto-hero {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero div img {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .btn-group,
+    .dropstart {
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+/*!------------------------------------------------------Quienes somos-------------------------------------*/
+
+@media (max-width:1220px){
+
+    header{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .nosotros{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .presentacion h2 {
+        font-size: 50px;
+        height: 75px;
+        margin: 10px;
+        padding: 15px;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .presentacion img {
+        margin: 30px;
+        padding-bottom: 40px;
+        object-fit: contain;
+        border-image-repeat: repeat; 
+}
+}
+
+@media (max-width:1125px){
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentacion{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nosotros-img{
+        display: none;
+        visibility: hidden;
+    }
+    .presentacion h2{
+        color:#FBB031;
+    }
+
+    .presentacion p{
+        color: #fafafa;
+    }
+
+    .presentacion{
+        background-image: url(../img/hero_zone_final_with_logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-nosotros{
+        display: block;
+        visibility: visible;
+        margin: 15px;
+    }
+}
+
+@media (max-width:515px){
+
+    .nosotros{
+        width: 90%;
+    }
+    .presentacion h2{
+        font-size: 35px;
+    }
+    .presentacion p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:380px){
+    .nosotros{
+        width: 88%;
+    }
+    .presentacion h2{
+        font-size: 30px;
+    }
+    .presentacion p{
+        font-size: 15px;
+    }
+}
