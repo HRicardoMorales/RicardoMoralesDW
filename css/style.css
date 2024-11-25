@@ -6,7 +6,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 .vacio {
     height: 10px;
@@ -322,6 +324,65 @@ a img:hover {
 
 
 /*!------------------------------------------------------Actuales-------------------------------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "aside-left main aside-right"
+        "pagination pagination pagination"
+        "footer footer footer";
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.aside-left {
+    grid-area: aside-left;
+    background-color: #f1f1f1; 
+}
+
+.main-content {
+    grid-area: main;
+    background-color: #ffffff; 
+}
+
+.aside-right {
+    grid-area: aside-right;
+    background-color: #f1f1f1; 
+}
+
+
+.pagination-nav {
+    grid-area: pagination;
+}
+
+
+.footer-actuales {
+    grid-area: footer;
+}
+
+
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .contenedor-actuales {
     margin: 0 auto;
@@ -730,5 +791,48 @@ a img:hover {
     }
     .presentacion p{
         font-size: 15px;
+    }
+}
+
+/*!------------------------------------------------------Actuales-------------------------------------*/
+
+@media (max-width: 615px) {
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "main"
+            "pagination"
+            "aside-left"
+            "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+    }
+
+    .card{
+        gap: 5px;
+    }
+
+    .aside-left {
+        display: block; 
+    }
+
+    .aside-right{
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .footer, .pagination {
+        padding: 10px; 
+    }
+
+    .main-content {
+        padding: 15px; 
     }
 }
