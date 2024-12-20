@@ -35,7 +35,6 @@ header h1 {
     padding: 30px;
     font-family: normal;
     font-weight: 800;
-
 }
 
 header nav ul li {
@@ -105,7 +104,6 @@ header nav ul li {
 
 .texto-amarillo {
     color: #ffd300;
-
 }
 
 .hero div img {
@@ -152,16 +150,17 @@ header nav ul li {
 }
 
 .Bienvenida h2 {
-    font-size: 35px;
-    padding: 15px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.Bienvenida a img {
-    align-items: center;
-    height: 400px;
-    width: 600px;
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px)
 }
 
 .texto-parrafo {
@@ -337,6 +336,11 @@ a img:hover {
     height: 100vh;
 }
 
+.menu {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
 
 .header {
     grid-area: header;
@@ -415,7 +419,10 @@ a img:hover {
 .menu {
     padding: 10px;
     margin-bottom: 10px;
+}
 
+.main-content{
+    width: 88vw;
 }
 
 .contenedor-retro {
@@ -434,6 +441,56 @@ a img:hover {
 
 .owl-container {
     margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside-left main aside-right"
+        "pagination pagination pagination"
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.aside-left {
+    grid-area: aside-left;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.aside-right {
+    grid-area: aside-right;
+}
+
+.pagination-nav {
+    grid-area: pagination;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.contenedor-retro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.retro-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 
@@ -601,9 +658,9 @@ a img:hover {
 }
 
 
-@media (max-width:520px) {
-
     /*--------------------------Header-----------------------*/
+    
+    @media (max-width:520px) {
     .menu {
         display: none;
     }

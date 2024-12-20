@@ -1,0 +1,26 @@
+// Variables
+
+$color-primario: #000100;
+$color-secundario: #FBB031;
+
+// Listas
+
+$colores: #FBB031, #000100, #202128, #EDF2F4, #fafafa, #ffd300
+
+// mixin
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+//extend 
+%button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
