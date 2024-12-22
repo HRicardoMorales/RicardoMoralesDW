@@ -276,9 +276,16 @@ header nav ul li a:hover::after {
   height: 700px;
 }
 .Cards h2 {
-  font-size: 25px;
-  text-align: center;
-  padding: 25px;
+  padding: 20px;
+  font-size: clamp(20px, 2vw, 45px);
+  line-height: clamp(20px, 2vw, 45px);
+  color: #202128;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
   background-color: #fbb031;
 }
 
@@ -929,7 +936,6 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
-    flex-direction: column;
   }
   .nosotros-img {
     display: none;
@@ -951,7 +957,6 @@ footer {
     justify-content: space-evenly;
   }
   .nosotros {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

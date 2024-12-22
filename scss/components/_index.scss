@@ -280,9 +280,16 @@ header {
     height: 700px;
 
     h2 {
-        font-size: 25px;
-        text-align: center;
-        padding: 25px;
+        padding: 20px;
+        font-size: clamp(20px, 2vw, 45px);
+        line-height: clamp(20px, 2vw, 45px);
+        color: #202128;
+        text-transform: uppercase;
+        font-family: Raleway, sans-serif;
+        font-weight: 900;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
         background-color: #fbb031;
     }
 }
