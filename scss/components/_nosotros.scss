@@ -1,0 +1,40 @@
+
+.presentacion {
+    background-color: #202128 ;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        margin-left: 50px;
+        color: #FBB031;
+        font-size: 50px;
+        height: 75px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        height: 400px;
+        margin: 10px;
+        padding-left: 35px;
+    }
+
+    p {
+        color: #fafafa;
+        font-size: 20px;
+    }
+    .nosotros {
+        width: 85vw;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.btn-nosotros {
+    display: none;
+    visibility: hidden;
+}

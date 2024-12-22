@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kumar+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=NTR&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.vacio {
+    height: 10px;
+    background-color: #202128;
+}
+
+
+
+/*--------------------------Header-----------------------*/
+
+header a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 45px;
+    color: #FBB031;
+    padding: 30px;
+    font-family: normal;
+    font-weight: 800;
+}
+
+header nav ul li {
+    font-size: 20px;
+    font-family: "NTR", sans-serif;
+}
+
+header {
+    background-color: #000100;
+
+}
+
+header nav ul {
+    list-style: none;
+    margin: 10px;
+
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #EDF2F4;
+}
+
+header nav ul li {
+    margin: 10px;
+    display: inline-block
+}
+
+.btn-group,
+.dropstart {
+    display: none;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+/*----------------------Hero---------------------*/
+
+.hero {
+    height: 500px;
+    background-image: url(../img/hero_zone_final_with_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.hero div h2 {
+    font-size: 40px;
+    padding-top: 10px;
+    color: #EDF2F4;
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px);
+    text-align: left;
+}
+
+.texto-amarillo {
+    color: #ffd300;
+}
+
+.hero div img {
+    height: 300px;
+    width: 400px;
+}
+
+.hero div p {
+    font-size: 35px;
+    text-align: left;
+    font-size: clamp(14px, 1.5vw, 25px);
+    line-height: clamp(14px, 3vw, 30px);
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    width: 75%;
+}
+
+.hero div a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffd300;
+    font-family: "NTR", sans-serif;
+    text-align: left;
+}
+
+.hero div {
+    text-align: center;
+    width: 60%;
+    padding-left: 70px;
+}
+
+.btn-hero {
+    display: none;
+    visibility: hidden;
+}
+
+/*----------------------bienvenida-------------------*/
+
+.Bienvenida {
+    background-color: #fafafa;
+}
+
+.Bienvenida h2 {
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px)
+}
+
+.texto-parrafo {
+    padding-bottom: 20px
+}
+
+.imagen-texto {
+    width: 100%
+}
+
+.parrafo2 {
+    margin: 15px 0;
+    color: #fafafa;
+    font-size: clamp(13px, 1.5vw, 20px);
+    line-height: clamp(20px, 2.5vw, 25px)
+}
+
+.link-texto {
+    color: #ffd300;
+    text-decoration: underline
+}
+
+.main-bienvenida {
+    background-color: git status;
+    background-position: 0 0, 50% 30%;
+    background-size: auto, cover;
+    padding: 100px 100px 40px;
+    display: flex
+}
+
+.contendor-texto {
+    max-width: 40%;
+    margin-right: 50px;
+    position: sticky;
+    top: 22vh;
+    bottom: 40px;
+    height: fit-content;
+    gap: 16px
+}
+
+.titulo-blanco {
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px, 3vw, 55px);
+    line-height: clamp(30px, 3vw, 55px)
+}
+
+.titulo-amarillo {
+    width: 100%;
+    color: #ffd300;
+    box-sizing: border-box
+}
+
+.parrafo-main {
+    font-size: clamp(14px, 1.5vw, 25px);
+    line-height: clamp(14px, 3vw, 30px);
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    width: 75%
+}
+
+.asociate {
+    background-color: #ffd300;
+    border: 2px solid #ffd300;
+    transition: .2s ease;
+    cursor: pointer;
+    color: #1f1f1f;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-family: Raleway, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color .3s;
+    display: inline-block;
+    color: #000;
+    font-size: clamp(16px, 1.5vw, 24px);
+    width: fit-content
+}
+
+.responsive-asociate {
+    display: none;
+}
+
+/*--------------------------Productos----------------*/
+
+.Cards {
+    background-color: #fafafa;
+    height: 700px;
+
+}
+
+.Cards h2 {
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+    background-color: #FBB031;
+}
+
+
+/*--------------------Footer-----------------*/
+
+footer {
+    background-color: #FBB031;
+    color: black;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    font-size: 30px;
+}
+
+.footer-column p {
+    color: #EDF2F4;
+    font-size: 18px;
+}
+
+.footer-column ul li {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #EDF2F4;
+    font-size: 18px;
+}
+
+a img {
+    transition: transform 0.3s ease;
+    height: 40px;
+    width: 40px;
+}
+
+a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-column a {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+/*!------------------------------------------------------Actuales-------------------------------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "aside-left main aside-right"
+        "pagination pagination pagination"
+        "footer footer footer";
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+}
+
+.menu {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.aside-left {
+    grid-area: aside-left;
+    background-color: #f1f1f1; 
+}
+
+.main-content {
+    grid-area: main;
+    background-color: #ffffff; 
+}
+
+.aside-right {
+    grid-area: aside-right;
+    background-color: #f1f1f1; 
+}
+
+
+.pagination-nav {
+    grid-area: pagination;
+}
+
+
+.footer-actuales {
+    grid-area: footer;
+}
+
+
+
+.main-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenedor-actuales {
+    margin: 0 auto;
+    width: 88vw;
+}
+
+.Cards-actuales .Camisetas-actuales {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Camisetas-actuales div img {
+    width: 250px;
+    height: 250px;
+}
+
+.Camisetas-actuales div {
+    border: 1px solid black;
+    width: 251px;
+    height: 350px;
+    text-align: center;
+    margin: 15px;
+    background-color: #FFFFFF;
+}
+
+/*!---------------------------------------------------------------Retro------------------------------------------*/
+
+.menu {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.main-content{
+    width: 88vw;
+}
+
+.contenedor-retro {
+    margin: 0 auto;
+    width: 88vw;
+}
+
+.card {
+    gap: 5px;
+}
+
+.anuncios {
+    height: 50px;
+    background-color: #202128;
+}
+
+.owl-container {
+    margin-top: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside-left main aside-right"
+        "pagination pagination pagination"
+        "footer footer footer";
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.aside-left {
+    grid-area: aside-left;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.aside-right {
+    grid-area: aside-right;
+}
+
+.pagination-nav {
+    grid-area: pagination;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.contenedor-retro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.retro-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+
+
+/*!------------------------------------------------------Ubicacion-------------------------------------*/
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.row {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.quiz {
+    width: 700px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/*!------------------------------------------------------Quienes somos-------------------------------------*/
+
+.presentacion {
+    height: 700px;
+    margin: 0px 100px 0px 100px;
+}
+
+.presentacion h2 {
+    font-size: 50px;
+    height: 75px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.presentacion img {
+    height: 400px;
+    margin: 10px;
+    padding-left: 35px;
+
+}
+
+.presentacion p {
+    font-size: 20px;
+
+}
+
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-nosotros{
+    display: none;
+    visibility: hidden;
+}
+
+    /*------------------------------------------------------------------------------------------------------*/
+/*!--------------------------------------------------Media Queries-----------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------*/
+
+
+/*!--------------------------------------------------INDEX------------------------------------------*/
+
+@media (max-width:900px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero div h2 {
+        font-size: 30px;
+    }
+
+    .hero div a {
+        font-size: 20px;
+        justify-content: flex-start;
+    }
+
+    .hero div p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:790px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .hero div img {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    .hero div p {
+        text-align: start;
+    }
+
+    .hero div h2 {
+        text-align: start;
+    }
+}
+
+@media (max-width: 625px) {
+    .imagen-texto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center
+    }
+
+    .main-bienvenida {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px
+    }
+
+    .texto-parrafo,
+    .parrafo-main {
+        text-align: center
+    }
+
+    .contendor-texto {
+        max-width: 100%;
+        margin: 0;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    .titulo-blanco,
+    .titulo-amarillo {
+        text-align: center;
+    }
+
+    .responsive-asociate {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .asociate {
+        display: none;
+    }
+}
+
+
+    /*--------------------------Header-----------------------*/
+    
+    @media (max-width:520px) {
+    .menu {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    .dropdown-menu {
+        background-color: #202128;
+        padding: 10px;
+    }
+
+    .btn {
+        color: #FBB031;
+        font-family: normal;
+        font-weight: 700;
+    }
+
+    /*----------------------HERO---------------------*/
+
+    .hero div h2 {
+        font-size: 25px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero div a {
+        font-size: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero div p {
+        display: none;
+        visibility: hidden;
+    }
+
+    .btn-hero {
+        display: block;
+        visibility: visible;
+        margin-top: 50px;
+    }
+
+    .texto-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .texto-hero a {
+        display: none;
+        visibility: hidden;
+    }
+
+    /*----------------------BIENVENIDA---------------------*/
+
+    .texto-hero {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero div img {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+
+    .btn-group,
+    .dropstart {
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+/*!------------------------------------------------------Quienes somos-------------------------------------*/
+
+@media (max-width:1220px){
+
+    header{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .nosotros{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .presentacion h2 {
+        font-size: 50px;
+        height: 75px;
+        margin: 10px;
+        padding: 15px;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .presentacion img {
+        margin: 30px;
+        padding-bottom: 40px;
+        object-fit: contain;
+        border-image-repeat: repeat; 
+}
+}
+
+@media (max-width:1125px){
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentacion{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nosotros-img{
+        display: none;
+        visibility: hidden;
+    }
+    .presentacion h2{
+        color:#FBB031;
+    }
+
+    .presentacion p{
+        color: #fafafa;
+    }
+
+    .presentacion{
+        background-image: url(../img/hero_zone_final_with_logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-nosotros{
+        display: block;
+        visibility: visible;
+        margin: 15px;
+    }
+}
+
+@media (max-width:515px){
+
+    .nosotros{
+        width: 90%;
+    }
+    .presentacion h2{
+        font-size: 35px;
+    }
+    .presentacion p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width:380px){
+    .nosotros{
+        width: 88%;
+    }
+    .presentacion h2{
+        font-size: 30px;
+    }
+    .presentacion p{
+        font-size: 15px;
+    }
+}
+
+/*!------------------------------------------------------Actuales-------------------------------------*/
+
+@media (max-width: 615px) {
+    .grid-container {
+        grid-template-areas: 
+            "header"
+            "main"
+            "pagination"
+            "aside-left"
+            "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+    }
+
+    .card{
+        gap: 5px;
+    }
+
+    .aside-left {
+        display: block; 
+    }
+
+    .aside-right{
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    .header, .footer, .pagination {
+        padding: 10px; 
+    }
+
+    .main-content {
+        padding: 15px; 
+    }
+}

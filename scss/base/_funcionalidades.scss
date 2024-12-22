@@ -1,0 +1,31 @@
+// Variables
+$primary-color: #202128;
+$secondary-color: #FBB031;
+$text-color: #333;
+$background-color: #fafafa;
+
+// Lists
+$color-palette: (
+    'primary': $primary-color,
+    'secondary': $secondary-color,
+    'text': $text-color,
+    'background': $background-color
+);
+
+// Mixin
+@mixin center($flex-direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $flex-direction;
+}
+
+// Extendables
+%center {
+    @include center();
+}
+
+%text-style {
+    color: $text-color;
+    font-family: Arial, sans-serif;
+}

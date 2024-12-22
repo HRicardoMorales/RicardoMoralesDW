@@ -1,0 +1,487 @@
+@media (max-width:900px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero div h2 {
+        font-size: 30px;
+    }
+
+    .hero div a {
+        font-size: 20px;
+        justify-content: flex-start;
+    }
+
+    .hero div p {
+        font-size: 15px;
+    }
+
+    main .Bienvenida .main-bienvenida div .imagen-texto{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center
+    }
+
+
+}
+
+@media (max-width:790px) {
+
+    main .hero {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        
+
+    }
+
+    main .hero div img {
+        height: 200px;
+        width: 300px;
+        margin-bottom: 10px;
+    }
+
+    main .hero div p {
+        text-align: start;
+    }
+
+    main .hero div h2 {
+        text-align: start;
+    }
+    main .Bienvenida .main-bienvenida div .imagen-texto{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center
+    }
+}
+
+@media (max-width: 625px) {
+    main .Bienvenida .main-bienvenida div .imagen-texto {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center
+    }
+
+    main .Bienvenida .main-bienvenida {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px
+    }
+
+    main .Bienvenida .main-bienvenida div div .texto-parrafo{
+        text-align: center
+    }
+
+
+    main .Bienvenida .main-bienvenida div div .parrafo-main {
+        text-align: center
+    }
+
+    main .Bienvenida .main-bienvenida .contendor-texto {
+        max-width: 100%;
+        margin: 0;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center
+    }
+
+    main .Bienvenida .main-bienvenida .contendor-texto .titulo-blanco,
+    .titulo-amarillo {
+        text-align: center;
+    }
+
+    main .Bienvenida .main-bienvenida .responsive-asociate {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    main .Bienvenida .main-bienvenida .contendor-texto .asociate {
+        display: none;
+    }
+}
+
+    /*--------------------------Header-----------------------*/
+    
+    @media (max-width:520px) {
+        header .nav-index .menu {
+            display: none;
+        }
+    
+        header {
+            flex-direction: row;
+            padding: 15px;
+        }
+    
+        header .nav-index .dropstart .dropdown-menu {
+            background-color: #202128;
+            padding: 10px;
+        }
+    
+        header .nav-index .dropstart .btn {
+            color: #FBB031;
+            font-family: normal;
+            font-weight: 700;
+        }
+    
+        /*----------------------HERO---------------------*/
+    
+        main .hero .texto-hero h2 {
+            font-size: 40px;
+            padding: 5px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        main .hero .texto-hero h2 span{
+            color:#ffd300;
+        }
+    
+        main .hero .texto-hero a {
+            display: none
+        }
+    
+        .hero div p {
+            display: none;
+            visibility: hidden;
+        }
+    
+        .btn-hero {
+            display: block;
+            visibility: visible;
+            margin-top: 50px;
+        }
+    
+        main .hero .texto-hero {
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        .texto-hero a {
+            margin: 10px;
+        }
+    
+        /*----------------------BIENVENIDA---------------------*/
+    
+        .texto-hero {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .hero div img {
+            display: none;
+            visibility: hidden;
+        }
+    
+        .nav-index .menu{
+            display: none;
+            visibility: hidden;
+        }
+    
+        .btn-group,
+        .dropstart {
+            display: block;
+            visibility: visible;
+        }
+    
+    }
+
+    @media (max-width:1220px){
+
+    header{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .nosotros{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .presentacion h2 {
+        font-size: 50px;
+        height: 75px;
+        margin: 10px;
+        padding: 15px;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .presentacion img {
+        margin: 30px;
+        padding-bottom: 40px;
+        object-fit: contain;
+        border-image-repeat: repeat; 
+}
+}
+
+@media (max-width:1125px){
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nosotros{
+        flex-direction: column;
+    }
+    .presentacion{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nosotros-img{
+        display: none;
+        visibility: hidden;
+    }
+    .presentacion h2{
+        color:#FBB031;
+    }
+
+    .presentacion p{
+        color: #fafafa;
+    }
+
+    .presentacion{
+        background-image: url(../img/hero_zone_final_with_logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nosotros{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-nosotros{
+        display: block;
+        visibility: visible;
+        margin: 15px;
+    }
+}
+
+@media (max-width:515px){
+
+    .nosotros{
+        width: 90%;
+    }
+    .presentacion h2{
+        font-size: 35px;
+    }
+    .presentacion p{
+        font-size: 18px;
+    }
+    .owl-nav, .owl-dots{
+        display: none;
+    }
+}
+
+@media (max-width:380px){
+    .nosotros{
+        width: 88%;
+    }
+    .presentacion h2{
+        font-size: 30px;
+    }
+    .presentacion p{
+        font-size: 15px;
+    }
+}
+
+/*!------------------------------------------------------Quienes somos-------------------------------------*/
+
+@media (max-width:1220px){
+
+    header{
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .nosotros{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .presentacion h2 {
+        font-size: 50px;
+        height: 75px;
+        margin: 10px;
+        padding: 15px;
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .presentacion img {
+        margin: 30px;
+        padding-bottom: 40px;
+        object-fit: contain;
+        border-image-repeat: repeat; 
+}
+}
+
+@media (max-width:1125px){
+
+    header{
+        margin: 0;
+        padding: 0;
+    }
+
+    .presentacion{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .nosotros-img{
+        display: none;
+        visibility: hidden;
+    }
+    .presentacion h2{
+        color:#FBB031;
+    }
+
+    .presentacion p{
+        color: #fafafa;
+    }
+
+    .presentacion{
+        background-image: url(../img/hero_zone_final_with_logo.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-nosotros{
+        display: block;
+        visibility: visible;
+        margin: 15px;
+        background-color: #ffd300;
+        border: 2px solid #ffd300;
+        transition: .2s ease;
+        cursor: pointer;
+        color: #1f1f1f;
+        border-radius: 50px;
+        padding: 8px 40px;
+        font-family: Raleway, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color .3s;
+        display: inline-block;
+        color: #000;
+        font-size: clamp(16px, 1.5vw, 24px);
+        width: fit-content
+    }
+}
+
+@media (max-width:515px){
+
+    .nosotros{
+        width: 90%;
+    }
+    .presentacion h2{
+        font-size: 35px;
+    }
+    .presentacion p{
+        font-size: 18px;
+    }
+
+    header .btn-group button{
+        color: #FBB031;
+        font-family: normal;
+        font-weight: 700;
+        background-color: #202128;
+    }
+    header .btn-group .dropdown-menu {
+        background-color: #202128;
+        padding: 10px;
+    
+    header .btn-group .dropdown-menu li a{
+        color: #fafafa;
+    }
+}
+
+@media (max-width:380px){
+    .nosotros{
+        width: 88%;
+    }
+    .presentacion h2{
+        font-size: 30px;
+    }
+    .presentacion p{
+        font-size: 15px;
+    }
+}
+}
+/*!------------------------------------------------------Actuales-------------------------------------*/
+
+@media (max-width: 620px) {
+
+    .main-content{
+        width: 100vw !important;
+    }
+    .grid-container {
+        width: 100vw;
+        grid-template-areas: 
+            "header"
+            "main"
+            "pagination"
+            "footer";
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+    }
+
+    .card{
+        gap: 5px;
+    }
+
+    .aside-left {
+        display: none; 
+    }
+
+    .aside-right{
+        display: none;
+    }
+}
+
+/*!------------------------------------------------------Ubicacion-------------------------------------*/
+
+@media (max-width: 770px){
+    .formulario{
+        flex-direction: column;
+    }
+    .mapa, iframe{
+        margin-top: 10px;
+        height: 250px;
+        width: 100vw;
+    }
+}
+    
