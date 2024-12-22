@@ -21,7 +21,7 @@
 
     .main-content {
         grid-area: main;
-        background-color: #ffffff;
+        background-color: #202128;
     }
 
     .aside-right {
@@ -40,16 +40,33 @@
 
 .main-content{
     .contenedor-actuales{
+        margin: 0 auto;
+        width: 88vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
         .menu-pages{
+            padding: 10px;
+            margin-bottom: 10px;
+            
             .nav{
-                background-color:#fafafa;
+                background-color:#202128;
                 .flex-sm-fill{
                     font-weight: 800;
-                    color: #fbb031;
-                    
+                    color: #fafafa;
+                    transition: background-color 0.3s ease, transform 0.3s ease;
+
+                    &:hover {
+                        background-color: #fbb031; 
+                        transform: scale(1.05); 
+                    }
+                }
+                .disabled{
+                    color: #ffd300;
                 }
                 .active{
-                    background-color: #202128;
+                    background-color: #fbb031;
                 }
         }
     }

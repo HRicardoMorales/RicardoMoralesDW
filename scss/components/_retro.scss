@@ -40,14 +40,23 @@
                 padding: 10px;
                 margin-bottom: 10px;
                 .nav{
-                    background-color:#fafafa;
+                    background-color:#202128;
                     .flex-sm-fill{
                         font-weight: 800;
-                        color: #fbb031;
+                        color: #fafafa;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        &:hover {
+                            background-color: #fbb031; 
+                            transform: scale(1.05); 
+                        }
+                    }
+                    .disabled{
+                        color: #ffd300;
+                    }
                         
                     }
                     .active{
-                        background-color: #202128;
+                        background-color: #fbb031;
                     }
             }
             }
@@ -71,12 +80,31 @@
 
     .pagination-nav {
         grid-area: pagination;
+        .pagination{
+            .page-item{
+                a {
+                    color: #fafafa;
+                    background-color: #202128;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+                
+                    &:hover {
+                        color: #202128; 
+                        background-color: #fbb031; 
+                        transform: scale(1.05); 
+                        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+                    }
+                }
+            }
+        }
     }
 
     footer {
         grid-area: footer;
     }
-}
+
 
 .anuncios {
     height: 50px;

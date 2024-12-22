@@ -15,6 +15,15 @@
     .hero div p {
         font-size: 15px;
     }
+
+    main .Bienvenida .main-bienvenida div .imagen-texto{
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        object-position: center
+    }
+
+
 }
 
 @media (max-width:790px) {
@@ -39,6 +48,12 @@
 
     main .hero div h2 {
         text-align: start;
+    }
+    main .Bienvenida .main-bienvenida div .imagen-texto{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: center
     }
 }
 
@@ -130,10 +145,7 @@
         }
     
         main .hero .texto-hero a {
-            font-size: 15px;
-            align-items: center;
-            text-align: center;
-            justify-content: center;
+            display: none
         }
     
         .hero div p {
@@ -223,7 +235,11 @@
         padding: 0;
     }
 
+    .nosotros{
+        flex-direction: column;
+    }
     .presentacion{
+        flex-direction: column;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -273,6 +289,9 @@
     }
     .presentacion p{
         font-size: 18px;
+    }
+    .owl-nav, .owl-dots{
+        display: none;
     }
 }
 
@@ -331,6 +350,7 @@
         width: 100%;
         margin: 0;
         padding: 0;
+        flex-direction: column;
     }
     .nosotros-img{
         display: none;
@@ -356,6 +376,7 @@
 
     .nosotros{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -451,3 +472,17 @@
         display: none;
     }
 }
+
+/*!------------------------------------------------------Ubicacion-------------------------------------*/
+
+@media (max-width: 770px){
+    .formulario{
+        flex-direction: column;
+    }
+    .mapa, iframe{
+        margin-top: 10px;
+        height: 250px;
+        width: 100vw;
+    }
+}
+    
